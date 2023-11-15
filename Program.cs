@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mime;
 
 namespace CSharpLight
 {
@@ -13,21 +14,17 @@ namespace CSharpLight
                 new Fighter("Шредер", 150, 100, 10),
                 new Fighter("Марио", 300, 75, 5)
             };
-            int fighterNumber;
 
             for (int i = 0; i < fighters.Length; i++)
             {
                 Console.Write(i + 1 + " ");
                 fighters[i].ShowStats();
             }
-
+            
             Console.Write("Выберите номер первого бойца: ");
-            fighterNumber = (Convert.ToInt16(Console.ReadLine()) - 1);
-            Fighter firstFighter = fighters[fighterNumber];
-
+            Fighter firstFighter = fighters[ChooseFighter(fighters.Length)];
             Console.Write("Выберите номер второго бойца: ");
-            fighterNumber = (Convert.ToInt16(Console.ReadLine()) - 1);
-            Fighter secondFighter = fighters[fighterNumber];
+            Fighter secondFighter = fighters[ChooseFighter(fighters.Length)];
 
             Console.CursorVisible = false;
 
@@ -44,7 +41,6 @@ namespace CSharpLight
             }
 
             ShowWinner(firstFighter, secondFighter);
-            Console.ReadKey();
         }
 
         class Fighter
@@ -64,7 +60,8 @@ namespace CSharpLight
             public int Health { get; private set; }
 
             public int Damage { get; }
-
+            
+            
             public void ShowStats()
             {
                 Console.WriteLine($"Боец - {Name}, здоровье - {Health}, наносимый урон - {Damage}, броня - {_armor}");
@@ -86,6 +83,22 @@ namespace CSharpLight
             }
         }
 
+        private static int ChooseFighter(int arrLength)
+        {
+            bool success = int.TryParse(Console.ReadLine(), out int FighterNumber);
+            
+            if (success && FighterNumber > 0 && FighterNumber <= arrLength)
+            {
+                return FighterNumber - 1;
+            }
+            else
+            {
+                Console.WriteLine("Не могу принять такое значение");
+                Environment.Exit(0);
+                return 1;
+            }
+        }
+        
         static void ShowWinner(Fighter firstFighter, Fighter secondFighter)
         {
             string winner;

@@ -13,3 +13,18 @@ C:\Users\a.v.makhin\source\repos\TG zadacha\TG zadacha\obj\Debug\net6.0\TG zadac
 C:\Users\a.v.makhin\source\repos\TG zadacha\TG zadacha\obj\Debug\net6.0\ref\TG zadacha.dll
 C:\Users\a.v.makhin\source\repos\TG zadacha\TG zadacha\obj\Debug\net6.0\TG zadacha.pdb
 C:\Users\a.v.makhin\source\repos\TG zadacha\TG zadacha\obj\Debug\net6.0\TG zadacha.genruntimeconfig.cache
+C:\Users\Makhi\RiderProjects\tg_find_bug\bin\Debug\net6.0\TG zadacha.exe
+C:\Users\Makhi\RiderProjects\tg_find_bug\bin\Debug\net6.0\TG zadacha.deps.json
+C:\Users\Makhi\RiderProjects\tg_find_bug\bin\Debug\net6.0\TG zadacha.runtimeconfig.json
+C:\Users\Makhi\RiderProjects\tg_find_bug\bin\Debug\net6.0\TG zadacha.dll
+C:\Users\Makhi\RiderProjects\tg_find_bug\bin\Debug\net6.0\TG zadacha.pdb
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.csproj.AssemblyReference.cache
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.AssemblyInfoInputs.cache
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.AssemblyInfo.cs
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.csproj.CoreCompileInputs.cache
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.dll
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\refint\TG zadacha.dll
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.pdb
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\TG zadacha.genruntimeconfig.cache
+C:\Users\Makhi\RiderProjects\tg_find_bug\obj\Debug\net6.0\ref\TG zadacha.dll

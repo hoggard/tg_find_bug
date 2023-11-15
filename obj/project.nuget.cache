@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ZWyqNjHU70/DUrVsRy0tkP0CbxMEQcQxbBwnmlHQ8z2LeG6Y8UCSwBLdrV+pqmZV0rV5CROu+gxQgt4FDSv2Gg==",
+  "dgSpecHash": "xNMU+lELjIpHX08V2jZe5vAPn/gTCR4GTlziawgP3i/8+hUO6Ty9MLad994zFAOtOE2SGmh+mIkZZJVRyxq7YA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a.v.makhin\\source\\repos\\TG zadacha\\TG zadacha\\TG zadacha.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Makhi\\RiderProjects\\tg_find_bug\\TG zadacha.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Makhi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Makhi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Makhi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Makhi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

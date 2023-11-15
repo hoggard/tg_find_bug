@@ -49,61 +49,40 @@ namespace CSharpLight
 
         class Fighter
         {
-            private string _name;
-            private int _health;
-            private int _damage;
             private int _armor;
 
             public Fighter(string name, int health, int damage, int armor)
             {
-                _name = name;
-                _health = health;
-                _damage = damage;
+                Name = name;
+                Health = health;
+                Damage = damage;
                 _armor = armor;
             }
 
-            public string Name
-            {
-                get
-                {
-                    return _name;
-                }
-            }
+            public string Name { get; }
 
-            public int Health
-            {
-                get
-                {
-                    return _health;
-                }
-            }
+            public int Health { get; private set; }
 
-            public int Damage
-            {
-                get
-                {
-                    return _damage;
-                }
-            }
+            public int Damage { get; }
 
             public void ShowStats()
             {
-                Console.WriteLine($"Боец - {_name}, здоровье - {_health}, наносимый урон - {_damage}, броня - {_armor}");
+                Console.WriteLine($"Боец - {Name}, здоровье - {Health}, наносимый урон - {Damage}, броня - {_armor}");
             }
 
             public void ShowCurrentHealth()
             {
-                int health = _health;
-                if (_health < 0)
+                int health = Health;
+                if (Health < 0)
                 {
                     health = 0;
                 }
-                Console.Write($"    { _name} здоровье: { health}");
+                Console.Write($"    { Name} здоровье: { health}");
             }
 
             public void TakeDamage(int damage)
             {
-                _health -= damage - _armor;
+                Health -= damage - _armor;
             }
         }
 

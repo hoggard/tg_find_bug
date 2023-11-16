@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Mime;
 
 namespace CSharpLight
@@ -85,18 +85,14 @@ namespace CSharpLight
 
         private static int ChooseFighter(int arrLength)
         {
-            bool success = int.TryParse(Console.ReadLine(), out int FighterNumber);
-            
-            if (success && FighterNumber > 0 && FighterNumber <= arrLength)
-            {
-                return FighterNumber - 1;
-            }
-            else
+            int FighterNumber = 0;
+            bool success = int.TryParse(Console.ReadLine(), out FighterNumber);
+            while (!(success && FighterNumber > 0 && FighterNumber <= arrLength))
             {
                 Console.WriteLine("Не могу принять такое значение");
-                Environment.Exit(0);
-                return 1;
+                success = int.TryParse(Console.ReadLine(), out FighterNumber);
             }
+            return FighterNumber - 1;
         }
         
         static void ShowWinner(Fighter firstFighter, Fighter secondFighter)
@@ -112,7 +108,7 @@ namespace CSharpLight
             }
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"Победил игрок: {winner}");
+            Console.WriteLine($"Победил боец: {winner}");
         }
     }
 }
